@@ -1,0 +1,162 @@
+2011-10-04  Ozkan Sezer  <sezeroz@gmail.com>
+
+	Merge from trunk rev. 4319:
+	2011-08-07  Ozkan Sezer  <sezeroz@gmail.com>
+	* psdk_inc/_socket_types.h: Provide the SOCKET type as unsigned
+
+2011-09-26  Ozkan Sezer  <sezeroz@gmail.com>
+
+	* sdkddkver.h: Whitespace tidy-up.  Add our standart license header.
+	(_WIN32_WINNT): Define default value as _WIN32_WINNT_WS03, i.e. 0x0502,
+	which is what we had been defining in windows.h until this day.
+	(NTDDI_VERSION): Define default value as NTDDI_WS03, i.e. 0x05020000,
+	matching what we had been defining in windows.h until this day.
+	(WINVER): Define default value as 0x0502, which is what we had been
+	defining in windows.h until this day.
+	* winnt.h: Include sdkddkver.h.
+	* windows.h: Include sdkddkver.h.
+	(WINVER): Now that we include sdkddkver.h, remove the extra definition.
+
+2011-09-21  Ozkan Sezer  <sezeroz@gmail.com>
+
+	* _timeval.h (timercmp): Added missing parens around the AND
+	condition.
+
+2011-09-12  Ozkan Sezer  <sezeroz@gmail.com>
+
+	Merge from trunk rev. 4407:
+	2011-08-22  Jonathan Yong  <jon_y@users.sourceforge.net>
+	* _mingw.h.in (__forceinline): Fix for C99 case and check for C++ mode.
+	* winnt.h (FORCEINLINE): Simplify based on _mingw.h definition.
+
+2011-08-07  Ozkan Sezer  <sezeroz@gmail.com>
+
+	* wincrypt.h: Added MS_ENH_RSA_AES_PROV_XP[_A|_W]. (Thanks to Alon
+	Bar-Lev.)
+
+2011-07-23  Ozkan Sezer  <sezeroz@gmail.com>
+
+	Merged from trunk:
+	2010-07-19  Kai Tietz  <kai.tietz@onevision.com> (rev. 4283)
+	* _mingw_mac.h (__MINGW_IMP_LSYMBOL): New helper macro for assembly
+	files.
+
+2011-07-23  Ozkan Sezer  <sezeroz@gmail.com>
+
+	* winnt.h (C_ASSERT): Revert the EXTERN_C change from rev.4285/4286.
+	* usbioctl.h: Remove the extern "C" {} from the header completely.
+	There are no functions or variables are declared, only data types,
+	therefore it is not needed.
+	* dbghelp.h, imagehlp.h: move the extern "C" braces so that the
+	C_ASSERTs are not contained within them. (bug #3373905.)
+	* crtdbg.h, malloc.h (_STATIC_ASSERT): Restrict the typedef variant
+	of the macro to MSVC. Add an extern declaration variant for gcc,
+	similar to C_ASSERT.
+
+2011-07-23  Ozkan Sezer  <sezeroz@gmail.com>
+
+	* _mingw.h (__debugbreak): Add prototype before the inline as it
+	appears in intrin.h.
+	* winnt.h: Move the intrin.h include before the __faststorefence
+	inline. Remove the redundant prototype for _m_prefetchw() which
+	is already in intrin.h.
+
+2011-07-21  Ozkan Sezer  <sezeroz@gmail.com>
+
+	* winnt.h (C_ASSERT): Define using EXTERN_C instead of extern.
+	* ws2tcpip.h: Move the extern "C" closing brace to cover the IN6_
+	prototypes.
+
+2011-07-01  Ozkan Sezer  <sezeroz@gmail.com>
+
+	Merged from trunk:
+	2011-07-01  Jacek Caban  <jacek@codeweavers.com>  (rev. 4235)
+	* winnt.h (FORCEINLINE): Define without extern for __cplusplus.
+	2011-07-01  Ozkan Sezer  <sezeroz@gmail.com>  (rev. 4238)
+	* ntdef.h (FORCEINLINE): Mirror the __GNUG__ case of FORCEINLINE
+	definition in ntdef.h.
+
+2011-06-23  Kai Tietz  <ktietz@redhat.com>
+
+	* basetyps.h (DECLARE_INTERFACE_IID_): New macro.
+	* objbase.h: Likewise.
+
+2011-06-15  Jonathan Yong  <jon_y@users.sourceforge.net>
+
+	* wincon.h(ENABLE_INSERT_MODE): Define.
+	(ENABLE_QUICK_EDIT_MODE): Define.
+	(ENABLE_EXTENDED_FLAGS): Define.
+	(ENABLE_AUTO_POSITION): Define.
+
+2011-05-23  Ozkan Sezer  <sezeroz@gmail.com>
+
+	* ctype.h (__mb_cur_max):  Define as __mb_cur_max for the _MSVCRT_
+	special case.
+	* stdlib.h: Remove the duplicated and typographically erroneous
+	__mbcur_max macros. Make the entries identical to the ctype.h
+	counterparts.
+	(__mb_cur_max): Define as __mb_cur_max for the _MSVCRT_ special case.
+
+2011-05-05  Ozkan Sezer  <sezeroz@gmail.com>
+
+	Merged from trunk:
+	2010-02-01  Kai Tietz  <kai.tietz@onevision.com> (rev. 1825)
+	Donated by S. Koehler
+	* winusbio.h: New API.
+	* winusb.h: New API.
+
+2011-05-05  Ozkan Sezer  <sezeroz@gmail.com>
+
+	Merged from trunk:
+	2011-05-05  Jonathan Yong  <jon_y@users.sourceforge.net> (rev. 4162)
+	* stdlib.h (swab): Use define guards.
+	* unistd.h (swab): Copy from stdlib.h as per POSIX spec.
+
+2011-04-27  Jose Fonseca  <jrfonseca@users.sourceforge.net>
+
+	* wingdi.h (WINGDIAPI): When _GDI32_ is defined, define as nothing.
+
+2011-04-21  Ozkan Sezer  <sezeroz@gmail.com>
+
+	Merged from trunk:
+	2011-04-21  Jacek Caban  <jacek@codeweavers.com>  (rev. 4146)
+	* _mingw.h: Added __MINGW_INTRIN_INLINE as a new macro. Added
+	__debugbreak implementation.
+	* winnt.h: Added __faststorefence implementation.
+
+2011-04-16  Ozkan Sezer  <sezeroz@gmail.com>
+
+	Merged from trunk:
+	2011-04-16  Jacek Caban  <jacek@codeweavers.com>  (revs. 4141-4143)
+	* _mingw.h: Added __w64 define.
+	* assert.h: Moved extern "C" to the right place.
+	* dvec.h, fvec.h, ivec.h: Make them usable.
+
+2011-04-08  Ozkan Sezer  <sezeroz@gmail.com>
+
+	* ksmedia.h:  Guard the SPEAKER_* macros by _SPEAKER_POSITIONS_
+	like in mmreg.h.
+
+2011-03-02  Ozkan Sezer  <sezeroz@gmail.com>
+
+	* winuser.h (TOUCHEVENTF_MOVE): Fix value as 0x01 acc.to msdn.
+	(TOUCHEVENTF_DOWN): Fix value as 0x02 acc.to msdn.
+
+2011-02-02  Ozkan Sezer  <sezeroz@gmail.com>
+
+	Merged from trunk:
+	2011-01-31  Kai Tietz  <kai.tietz@onevision.com>  (rev. 4007)
+	* sys/types.h: Make sure pid_t isn't overriden by some clever
+	configury.
+
+2011-01-23  Ozkan Sezer  <sezeroz@gmail.com>
+
+	* dos.h (_A_VOLID): Add missing definition, from r/os svn r50165.
+
+2011-01-14  Ozkan Sezer  <sezeroz@gmail.com>
+
+	* winsplp.h (MONITOR2): Fixes according to msdn documentation at
+	http://msdn.microsoft.com/en-us/library/ff557532(VS.85).aspx
+	thanks to a reminder from Lorenzo Monti. Closes patch tracker ID
+	3157986.
+

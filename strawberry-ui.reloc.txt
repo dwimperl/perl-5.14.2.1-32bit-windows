@@ -1,0 +1,5 @@
+C:\strawberry\
+README.txt:backslash
+win32\Strawberry Perl Release Notes.url:backslash
+win32\Strawberry Perl Website.url:backslash
+win32\Win32 Perl Wiki.url:backslash
