@@ -5212,3 +5212,25 @@ C<EXE_FILES: >
 
 =back
 
+=head2 Thu Feb  9 20:49:33 2012: C<Module> L<Test::LongString|Test::LongString>
+
+=over 4
+
+=item *
+
+C<installed into: C:\strawberry\perl\site\lib>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.15>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
