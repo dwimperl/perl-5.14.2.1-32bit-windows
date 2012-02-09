@@ -4442,3 +4442,25 @@ C<EXE_FILES: >
 
 =back
 
+=head2 Thu Feb  9 11:47:23 2012: C<Module> L<Metabase::Fact|Metabase::Fact>
+
+=over 4
+
+=item *
+
+C<installed into: C:\strawberry\perl\site\lib>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.020>
+
+=item *
+
+C<EXE_FILES: bin/metabase-profile>
+
+=back
+
