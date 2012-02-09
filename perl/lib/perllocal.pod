@@ -5168,3 +5168,25 @@ C<EXE_FILES: bin/mech-dump>
 
 =back
 
+=head2 Thu Feb  9 20:47:53 2012: C<Module> L<Carp::Assert|Carp::Assert>
+
+=over 4
+
+=item *
+
+C<installed into: C:\strawberry\perl\site\lib>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.20>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
