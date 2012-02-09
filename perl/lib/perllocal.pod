@@ -4926,3 +4926,25 @@ C<EXE_FILES: >
 
 =back
 
+=head2 Thu Feb  9 18:22:42 2012: C<Module> L<Test::Mock::LWP|Test::Mock::LWP>
+
+=over 4
+
+=item *
+
+C<installed into: C:\strawberry\perl\site\lib>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.06>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
