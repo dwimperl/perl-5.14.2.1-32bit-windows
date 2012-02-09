@@ -4288,3 +4288,25 @@ C<EXE_FILES: >
 
 =back
 
+=head2 Thu Feb  9 11:35:58 2012: C<Module> L<Test::Reporter|Test::Reporter>
+
+=over 4
+
+=item *
+
+C<installed into: C:\strawberry\perl\site\lib>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.58>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
