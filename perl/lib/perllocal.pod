@@ -6048,3 +6048,25 @@ C<EXE_FILES: bin/cpanm>
 
 =back
 
+=head2 Thu Feb  9 23:00:56 2012: C<Module> L<Class::Adapter|Class::Adapter>
+
+=over 4
+
+=item *
+
+C<installed into: C:\strawberry\perl\site\lib>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.08>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
