@@ -4464,3 +4464,25 @@ C<EXE_FILES: bin/metabase-profile>
 
 =back
 
+=head2 Thu Feb  9 11:48:22 2012: C<Module> L<CPAN::Testers::Report|CPAN::Testers::Report>
+
+=over 4
+
+=item *
+
+C<installed into: C:\strawberry\perl\site\lib>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.999001>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
