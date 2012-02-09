@@ -4552,3 +4552,25 @@ C<EXE_FILES: >
 
 =back
 
+=head2 Thu Feb  9 11:51:58 2012: C<Module> L<Mozilla::CA|Mozilla::CA>
+
+=over 4
+
+=item *
+
+C<installed into: C:\strawberry\perl\site\lib>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 20120118>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
