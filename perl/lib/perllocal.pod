@@ -4266,3 +4266,25 @@ C<EXE_FILES: >
 
 =back
 
+=head2 Thu Feb  9 11:32:07 2012: C<Module> L<Config::Tiny|Config::Tiny>
+
+=over 4
+
+=item *
+
+C<installed into: C:\strawberry\perl\site\lib>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 2.14>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
