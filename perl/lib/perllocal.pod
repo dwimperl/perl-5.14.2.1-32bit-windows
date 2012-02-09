@@ -5894,3 +5894,25 @@ C<EXE_FILES: >
 
 =back
 
+=head2 Thu Feb  9 22:37:22 2012: C<Module> L<Wx|Wx>
+
+=over 4
+
+=item *
+
+C<installed into: C:\strawberry\perl\site\lib>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.9903>
+
+=item *
+
+C<EXE_FILES: script/wxperl_overload>
+
+=back
+
