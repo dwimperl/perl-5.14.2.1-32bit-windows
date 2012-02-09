@@ -5982,3 +5982,25 @@ C<EXE_FILES: >
 
 =back
 
+=head2 Thu Feb  9 22:43:13 2012: C<Module> L<PPI|PPI>
+
+=over 4
+
+=item *
+
+C<installed into: C:\strawberry\perl\site\lib>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.215>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
