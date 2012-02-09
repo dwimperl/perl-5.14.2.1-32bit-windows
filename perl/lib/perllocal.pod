@@ -5520,3 +5520,25 @@ C<EXE_FILES: >
 
 =back
 
+=head2 Thu Feb  9 21:06:26 2012: C<Module> L<Test::Output|Test::Output>
+
+=over 4
+
+=item *
+
+C<installed into: C:\strawberry\perl\site\lib>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.01>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
