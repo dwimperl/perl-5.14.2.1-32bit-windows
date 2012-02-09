@@ -4728,3 +4728,25 @@ C<EXE_FILES: bin/pod_cover>
 
 =back
 
+=head2 Thu Feb  9 17:50:58 2012: C<Module> L<Test::Pod::Coverage|Test::Pod::Coverage>
+
+=over 4
+
+=item *
+
+C<installed into: C:\strawberry\perl\site\lib>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.08>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
