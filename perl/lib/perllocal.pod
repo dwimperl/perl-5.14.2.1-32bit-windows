@@ -5696,3 +5696,25 @@ C<EXE_FILES: >
 
 =back
 
+=head2 Thu Feb  9 21:42:15 2012: C<Module> L<Declare::Constraints::Simple|Declare::Constraints::Simple>
+
+=over 4
+
+=item *
+
+C<installed into: C:\strawberry\perl\site\lib>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.03>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
