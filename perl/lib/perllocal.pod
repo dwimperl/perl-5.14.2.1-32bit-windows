@@ -4596,3 +4596,25 @@ C<EXE_FILES: >
 
 =back
 
+=head2 Thu Feb  9 12:40:46 2012: C<Module> L<IPC::Cmd|IPC::Cmd>
+
+=over 4
+
+=item *
+
+C<installed into: C:\strawberry\perl\lib>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.76>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
