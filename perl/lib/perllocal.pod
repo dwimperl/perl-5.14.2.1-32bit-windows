@@ -6092,3 +6092,25 @@ C<EXE_FILES: >
 
 =back
 
+=head2 Thu Feb  9 23:04:46 2012: C<Module> L<Class::XSAccessor|Class::XSAccessor>
+
+=over 4
+
+=item *
+
+C<installed into: C:\strawberry\perl\site\lib>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.13>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
