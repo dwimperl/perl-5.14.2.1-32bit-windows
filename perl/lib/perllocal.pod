@@ -6312,3 +6312,25 @@ C<EXE_FILES: >
 
 =back
 
+=head2 Fri Feb 10 09:56:38 2012: C<Module> L<PPIx::EditorTools|PPIx::EditorTools>
+
+=over 4
+
+=item *
+
+C<installed into: C:\strawberry\perl\site\lib>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.15>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
