@@ -6400,3 +6400,25 @@ C<EXE_FILES: >
 
 =back
 
+=head2 Fri Feb 10 10:05:45 2012: C<Module> L<Pod::Abstract|Pod::Abstract>
+
+=over 4
+
+=item *
+
+C<installed into: C:\strawberry\perl\site\lib>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.20>
+
+=item *
+
+C<EXE_FILES: bin/paf>
+
+=back
+
