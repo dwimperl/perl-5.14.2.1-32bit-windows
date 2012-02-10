@@ -7170,3 +7170,25 @@ C<EXE_FILES: >
 
 =back
 
+=head2 Fri Feb 10 14:27:23 2012: C<Module> L<Padre::Plugin::PerlTidy|Padre::Plugin::PerlTidy>
+
+=over 4
+
+=item *
+
+C<installed into: C:\strawberry\perl\site\lib>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.21>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
