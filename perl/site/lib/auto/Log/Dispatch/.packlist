@@ -1,0 +1,15 @@
+C:\strawberry\perl\site\lib\Log\Dispatch.pm
+C:\strawberry\perl\site\lib\Log\Dispatch\ApacheLog.pm
+C:\strawberry\perl\site\lib\Log\Dispatch\Base.pm
+C:\strawberry\perl\site\lib\Log\Dispatch\Email.pm
+C:\strawberry\perl\site\lib\Log\Dispatch\Email\MIMELite.pm
+C:\strawberry\perl\site\lib\Log\Dispatch\Email\MailSend.pm
+C:\strawberry\perl\site\lib\Log\Dispatch\Email\MailSender.pm
+C:\strawberry\perl\site\lib\Log\Dispatch\Email\MailSendmail.pm
+C:\strawberry\perl\site\lib\Log\Dispatch\File.pm
+C:\strawberry\perl\site\lib\Log\Dispatch\File\Locked.pm
+C:\strawberry\perl\site\lib\Log\Dispatch\Handle.pm
+C:\strawberry\perl\site\lib\Log\Dispatch\Null.pm
+C:\strawberry\perl\site\lib\Log\Dispatch\Output.pm
+C:\strawberry\perl\site\lib\Log\Dispatch\Screen.pm
+C:\strawberry\perl\site\lib\Log\Dispatch\Syslog.pm

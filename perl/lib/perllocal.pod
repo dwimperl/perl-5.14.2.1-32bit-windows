@@ -6796,3 +6796,25 @@ C<EXE_FILES: >
 
 =back
 
+=head2 Fri Feb 10 13:42:55 2012: C<Module> L<Log::Dispatch|Log::Dispatch>
+
+=over 4
+
+=item *
+
+C<installed into: C:\strawberry\perl\site\lib>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 2.29>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
