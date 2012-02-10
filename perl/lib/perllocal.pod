@@ -7434,3 +7434,25 @@ C<EXE_FILES: >
 
 =back
 
+=head2 Fri Feb 10 16:00:30 2012: C<Module> L<Getopt::Long::Descriptive|Getopt::Long::Descriptive>
+
+=over 4
+
+=item *
+
+C<installed into: C:\strawberry\perl\site\lib>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.090>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
