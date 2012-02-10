@@ -6708,3 +6708,25 @@ C<EXE_FILES: bin/tpage bin/ttree>
 
 =back
 
+=head2 Fri Feb 10 13:34:27 2012: C<Module> L<Win32::SystemInfo|Win32::SystemInfo>
+
+=over 4
+
+=item *
+
+C<installed into: C:\strawberry\perl\site\lib>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.11>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
