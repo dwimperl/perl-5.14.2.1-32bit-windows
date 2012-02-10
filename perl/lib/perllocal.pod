@@ -6532,3 +6532,25 @@ C<EXE_FILES: >
 
 =back
 
+=head2 Fri Feb 10 12:20:22 2012: C<Module> L<Text::Patch|Text::Patch>
+
+=over 4
+
+=item *
+
+C<installed into: C:\strawberry\perl\site\lib>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.8>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
