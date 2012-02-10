@@ -6972,3 +6972,25 @@ C<EXE_FILES: bin/chartex>
 
 =back
 
+=head2 Fri Feb 10 14:07:36 2012: C<Module> L<Excel::Writer::XLSX|Excel::Writer::XLSX>
+
+=over 4
+
+=item *
+
+C<installed into: C:\strawberry\perl\site\lib>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.46>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
