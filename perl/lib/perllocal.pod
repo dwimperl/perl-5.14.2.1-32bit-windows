@@ -7214,3 +7214,25 @@ C<EXE_FILES: script/scandeps.pl>
 
 =back
 
+=head2 Fri Feb 10 15:15:57 2012: C<Module> L<Module::Install|Module::Install>
+
+=over 4
+
+=item *
+
+C<installed into: C:\strawberry\perl\site\lib>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.04>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
