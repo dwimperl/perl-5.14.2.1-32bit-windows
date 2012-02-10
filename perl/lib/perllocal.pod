@@ -6290,3 +6290,25 @@ C<EXE_FILES: >
 
 =back
 
+=head2 Fri Feb 10 09:55:20 2012: C<Module> L<POD2::Base|POD2::Base>
+
+=over 4
+
+=item *
+
+C<installed into: C:\strawberry\perl\site\lib>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.043>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
