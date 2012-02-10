@@ -6840,3 +6840,25 @@ C<EXE_FILES: >
 
 =back
 
+=head2 Fri Feb 10 13:48:29 2012: C<Module> L<Win32::Env::Path|Win32::Env::Path>
+
+=over 4
+
+=item *
+
+C<installed into: C:\strawberry\perl\site\lib>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.03>
+
+=item *
+
+C<EXE_FILES: script/win32envpath>
+
+=back
+
