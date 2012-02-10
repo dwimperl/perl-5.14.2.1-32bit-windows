@@ -7148,3 +7148,25 @@ C<EXE_FILES: podspell>
 
 =back
 
+=head2 Fri Feb 10 14:17:16 2012: C<Module> L<String::Format|String::Format>
+
+=over 4
+
+=item *
+
+C<installed into: C:\strawberry\perl\site\lib>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.16>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
