@@ -6994,3 +6994,25 @@ C<EXE_FILES: >
 
 =back
 
+=head2 Fri Feb 10 14:08:55 2012: C<Module> L<Spreadsheet::WriteExcelXML|Spreadsheet::WriteExcelXML>
+
+=over 4
+
+=item *
+
+C<installed into: C:\strawberry\perl\site\lib>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.13>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
