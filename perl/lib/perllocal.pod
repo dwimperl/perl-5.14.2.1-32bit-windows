@@ -6422,3 +6422,25 @@ C<EXE_FILES: bin/paf>
 
 =back
 
+=head2 Fri Feb 10 10:06:29 2012: C<Module> L<Template::Tiny|Template::Tiny>
+
+=over 4
+
+=item *
+
+C<installed into: C:\strawberry\perl\site\lib>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.12>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
