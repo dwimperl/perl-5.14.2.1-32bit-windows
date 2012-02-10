@@ -6884,3 +6884,25 @@ C<EXE_FILES: >
 
 =back
 
+=head2 Fri Feb 10 13:52:55 2012: C<Module> L<Digest::Perl::MD5|Digest::Perl::MD5>
+
+=over 4
+
+=item *
+
+C<installed into: C:\strawberry\perl\site\lib>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.8>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
