@@ -6378,3 +6378,25 @@ C<EXE_FILES: bin/check_perldiag>
 
 =back
 
+=head2 Fri Feb 10 10:04:34 2012: C<Module> L<Parse::ExuberantCTags|Parse::ExuberantCTags>
+
+=over 4
+
+=item *
+
+C<installed into: C:\strawberry\perl\site\lib>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.02>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
