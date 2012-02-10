@@ -6774,3 +6774,25 @@ C<EXE_FILES: bin/pm-uninstall>
 
 =back
 
+=head2 Fri Feb 10 13:41:48 2012: C<Module> L<Sys::Syslog|Sys::Syslog>
+
+=over 4
+
+=item *
+
+C<installed into: C:\strawberry\perl\site\lib>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.29>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
