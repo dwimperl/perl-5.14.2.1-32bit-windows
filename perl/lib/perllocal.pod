@@ -7082,3 +7082,25 @@ C<EXE_FILES: >
 
 =back
 
+=head2 Fri Feb 10 14:12:54 2012: C<Module> L<Readonly::XS|Readonly::XS>
+
+=over 4
+
+=item *
+
+C<installed into: C:\strawberry\perl\site\lib>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.05>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
