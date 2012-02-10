@@ -6598,3 +6598,25 @@ C<EXE_FILES: bin/cpan-outdated>
 
 =back
 
+=head2 Fri Feb 10 13:26:40 2012: C<Module> L<Net::Telnet|Net::Telnet>
+
+=over 4
+
+=item *
+
+C<installed into: C:\strawberry\perl\site\lib>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 3.03>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
