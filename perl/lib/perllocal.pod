@@ -6686,3 +6686,25 @@ C<EXE_FILES: >
 
 =back
 
+=head2 Fri Feb 10 13:33:34 2012: C<Module> L<Template|Template>
+
+=over 4
+
+=item *
+
+C<installed into: C:\strawberry\perl\site\lib>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 2.24>
+
+=item *
+
+C<EXE_FILES: bin/tpage bin/ttree>
+
+=back
+
