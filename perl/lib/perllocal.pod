@@ -6334,3 +6334,25 @@ C<EXE_FILES: >
 
 =back
 
+=head2 Fri Feb 10 09:59:56 2012: C<Module> L<Pod::POM|Pod::POM>
+
+=over 4
+
+=item *
+
+C<installed into: C:\strawberry\perl\site\lib>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.27>
+
+=item *
+
+C<EXE_FILES: bin/pom2 bin/podlint bin/pomdump>
+
+=back
+
