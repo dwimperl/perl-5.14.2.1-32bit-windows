@@ -6510,3 +6510,25 @@ C<EXE_FILES: >
 
 =back
 
+=head2 Fri Feb 10 12:15:21 2012: C<Module> L<ORLite::Migrate|ORLite::Migrate>
+
+=over 4
+
+=item *
+
+C<installed into: C:\strawberry\perl\site\lib>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.10>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
