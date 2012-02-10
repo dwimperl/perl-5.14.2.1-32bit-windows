@@ -6906,3 +6906,25 @@ C<EXE_FILES: >
 
 =back
 
+=head2 Fri Feb 10 13:53:46 2012: C<Module> L<OLE::Storage_Lite|OLE::Storage_Lite>
+
+=over 4
+
+=item *
+
+C<installed into: C:\strawberry\perl\site\lib>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.19>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
