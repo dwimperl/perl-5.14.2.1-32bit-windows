@@ -7126,3 +7126,25 @@ C<EXE_FILES: bin/perltidy>
 
 =back
 
+=head2 Fri Feb 10 14:16:21 2012: C<Module> L<Pod::Spell|Pod::Spell>
+
+=over 4
+
+=item *
+
+C<installed into: C:\strawberry\perl\site\lib>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.01>
+
+=item *
+
+C<EXE_FILES: podspell>
+
+=back
+

@@ -1,0 +1,58 @@
+
+# Time-stamp: "2001-10-27 00:01:55 MDT"
+
+=head1 NAME
+
+Pod::Wordlist -- English words that come up in Perl documentation
+
+=head1 SYNOPSIS
+
+  None!  Take that!
+
+=head1 ABOUT
+
+Pod::Wordlist is used by L<Pod::Spell|Pod::Spell>, providing a set of words
+(as keys in the hash C<%Pod::Spell::Wordlist>) that are English jargon
+words that come up in Perl documentation, but which are not to be found
+in general English lexicons.  (For example: autovivify, backreference,
+chroot, stringify, wantarray.)
+
+You can also use this wordlist with your word processor by just
+pasting C<Pod/Wordlist.pm>'s content into your wordprocessor, deleting
+the leading Perl code so that only the wordlist remains, and then
+spellchecking this resulting list and adding every word in it to your
+private lexicon.
+
+
+=head1 CONTRIBUTING
+
+You are welcome to send me your wordlists too, for possible incorporation
+into this wordlist.  I can take them only in ASCII.
+
+Note that the scope of this file is only English, specifically American
+English.  (But you may find in useful to incorporate into your own
+lexicons, even if they are for other dialects/languages.)
+
+
+=head1 COPYRIGHT AND DISCLAIMER
+
+Copyright (c) 2001 Sean M. Burke.  All rights reserved.
+
+This library is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself.
+
+This library is distributed in the hope that it will be useful,
+but without any warranty; without even the implied warranty of
+merchantability or fitness for a particular purpose.
+
+
+=head1 AUTHOR
+
+Sean M. Burke, sburke@cpan.org
+
+[NB: This wordlist includes much of a wordlist that Mark-Jason Dominus
+gave me.]
+
+=cut
+
+

@@ -1,0 +1,13 @@
+#!/usr/bin/perl
+require 5;            # Time-stamp: "2001-10-27 00:08:46 MDT"
+use strict;
+use Pod::Spell;
+if(@ARGV) {  # iterate over files, sending to STDOUT
+  foreach my $x (@ARGV) {
+    Pod::Spell->new->parse_from_file($x, '-');
+  }
+} else {     # take from STDIN, send to STDOUT
+  Pod::Spell->new->parse_from_filehandle();
+}
+
+__END__
