@@ -6730,3 +6730,25 @@ C<EXE_FILES: >
 
 =back
 
+=head2 Fri Feb 10 13:35:53 2012: C<Module> L<Win32::Daemon|Win32::Daemon>
+
+=over 4
+
+=item *
+
+C<installed into: C:\strawberry\perl\site\lib>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 20110117>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
