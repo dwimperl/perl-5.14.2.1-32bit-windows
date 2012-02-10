@@ -6444,3 +6444,25 @@ C<EXE_FILES: >
 
 =back
 
+=head2 Fri Feb 10 10:07:14 2012: C<Module> L<Text::FindIndent|Text::FindIndent>
+
+=over 4
+
+=item *
+
+C<installed into: C:\strawberry\perl\site\lib>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.10>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
