@@ -8160,3 +8160,25 @@ C<EXE_FILES: examples/xpath>
 
 =back
 
+=head2 Sat Feb 11 11:46:36 2012: C<Module> L<XML::Atom|XML::Atom>
+
+=over 4
+
+=item *
+
+C<installed into: C:\strawberry\perl\site\lib>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.41>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
