@@ -9546,3 +9546,25 @@ C<EXE_FILES: >
 
 =back
 
+=head2 Sat Feb 11 16:52:47 2012: C<Module> L<String::Errf|String::Errf>
+
+=over 4
+
+=item *
+
+C<installed into: C:\strawberry\perl\site\lib>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.006>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
