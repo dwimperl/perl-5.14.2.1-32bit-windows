@@ -8292,3 +8292,25 @@ C<EXE_FILES: >
 
 =back
 
+=head2 Sat Feb 11 13:24:12 2012: C<Module> L<CSS::Tiny|CSS::Tiny>
+
+=over 4
+
+=item *
+
+C<installed into: C:\strawberry\perl\site\lib>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.19>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
