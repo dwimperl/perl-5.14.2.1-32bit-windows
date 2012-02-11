@@ -9898,3 +9898,25 @@ C<EXE_FILES: >
 
 =back
 
+=head2 Sat Feb 11 17:16:35 2012: C<Module> L<Perl::PrereqScanner|Perl::PrereqScanner>
+
+=over 4
+
+=item *
+
+C<installed into: C:\strawberry\perl\site\lib>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.009>
+
+=item *
+
+C<EXE_FILES: bin/scan_prereqs>
+
+=back
+

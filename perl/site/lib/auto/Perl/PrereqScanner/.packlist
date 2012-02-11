@@ -1,0 +1,9 @@
+C:\strawberry\perl\site\bin\scan_prereqs
+C:\strawberry\perl\site\bin\scan_prereqs.bat
+C:\strawberry\perl\site\lib\Perl\PrereqScanner.pm
+C:\strawberry\perl\site\lib\Perl\PrereqScanner\Scanner.pm
+C:\strawberry\perl\site\lib\Perl\PrereqScanner\Scanner\Aliased.pm
+C:\strawberry\perl\site\lib\Perl\PrereqScanner\Scanner\Moose.pm
+C:\strawberry\perl\site\lib\Perl\PrereqScanner\Scanner\POE.pm
+C:\strawberry\perl\site\lib\Perl\PrereqScanner\Scanner\Perl5.pm
+C:\strawberry\perl\site\lib\Perl\PrereqScanner\Scanner\TestMore.pm
