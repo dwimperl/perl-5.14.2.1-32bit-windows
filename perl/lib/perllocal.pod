@@ -8710,3 +8710,25 @@ C<EXE_FILES: >
 
 =back
 
+=head2 Sat Feb 11 14:34:27 2012: C<Module> L<TryCatch|TryCatch>
+
+=over 4
+
+=item *
+
+C<installed into: C:\strawberry\perl\site\lib>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.003000>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
