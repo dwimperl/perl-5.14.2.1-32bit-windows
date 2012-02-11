@@ -9370,3 +9370,25 @@ C<EXE_FILES: >
 
 =back
 
+=head2 Sat Feb 11 15:55:04 2012: C<Module> L<CPAN::Meta|CPAN::Meta>
+
+=over 4
+
+=item *
+
+C<installed into: C:\strawberry\perl\site\lib>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 2.120351>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
