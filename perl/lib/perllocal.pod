@@ -8050,3 +8050,25 @@ C<EXE_FILES: >
 
 =back
 
+=head2 Sat Feb 11 11:34:57 2012: C<Module> L<Math::Round|Math::Round>
+
+=over 4
+
+=item *
+
+C<installed into: C:\strawberry\perl\site\lib>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.06>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
