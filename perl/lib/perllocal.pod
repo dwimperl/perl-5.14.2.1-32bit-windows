@@ -10184,3 +10184,25 @@ C<EXE_FILES: >
 
 =back
 
+=head2 Sat Feb 11 19:44:55 2012: C<Module> L<Email::MIME::ContentType|Email::MIME::ContentType>
+
+=over 4
+
+=item *
+
+C<installed into: C:\strawberry\perl\site\lib>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.015>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
