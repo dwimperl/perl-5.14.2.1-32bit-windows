@@ -9062,3 +9062,25 @@ C<EXE_FILES: >
 
 =back
 
+=head2 Sat Feb 11 15:29:28 2012: C<Module> L<Mouse|Mouse>
+
+=over 4
+
+=item *
+
+C<installed into: C:\strawberry\perl\site\lib>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.97>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
