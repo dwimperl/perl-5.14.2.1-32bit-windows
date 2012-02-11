@@ -9744,3 +9744,25 @@ C<EXE_FILES: >
 
 =back
 
+=head2 Sat Feb 11 17:07:40 2012: C<Module> L<Log::Dispatchouli|Log::Dispatchouli>
+
+=over 4
+
+=item *
+
+C<installed into: C:\strawberry\perl\site\lib>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 2.005>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
