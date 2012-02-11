@@ -9964,3 +9964,25 @@ C<EXE_FILES: >
 
 =back
 
+=head2 Sat Feb 11 17:19:39 2012: C<Module> L<Text::Template|Text::Template>
+
+=over 4
+
+=item *
+
+C<installed into: C:\strawberry\perl\site\lib>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.45>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
