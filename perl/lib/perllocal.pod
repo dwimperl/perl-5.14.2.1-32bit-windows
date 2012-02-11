@@ -8270,3 +8270,25 @@ C<EXE_FILES: >
 
 =back
 
+=head2 Sat Feb 11 13:19:14 2012: C<Module> L<Task::Kensho::Toolchain|Task::Kensho::Toolchain>
+
+=over 4
+
+=item *
+
+C<installed into: C:\strawberry\perl\site\lib>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.28>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
