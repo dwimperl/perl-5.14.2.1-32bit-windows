@@ -9414,3 +9414,25 @@ C<EXE_FILES: bin/cpan-upload>
 
 =back
 
+=head2 Sat Feb 11 15:58:25 2012: C<Module> L<Mixin::Linewise|Mixin::Linewise>
+
+=over 4
+
+=item *
+
+C<installed into: C:\strawberry\perl\site\lib>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.003>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
