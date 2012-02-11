@@ -8402,3 +8402,25 @@ C<EXE_FILES: eg/l4p-tmpl>
 
 =back
 
+=head2 Sat Feb 11 14:09:22 2012: C<Module> L<Log::Contextual|Log::Contextual>
+
+=over 4
+
+=item *
+
+C<installed into: C:\strawberry\perl\site\lib>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.004001>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
