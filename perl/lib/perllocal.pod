@@ -8490,3 +8490,25 @@ C<EXE_FILES: >
 
 =back
 
+=head2 Sat Feb 11 14:14:52 2012: C<Module> L<B::Hooks::OP::PPAddr|B::Hooks::OP::PPAddr>
+
+=over 4
+
+=item *
+
+C<installed into: C:\strawberry\perl\site\lib>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.03>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
