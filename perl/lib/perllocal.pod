@@ -7676,3 +7676,25 @@ C<EXE_FILES: script/sqlt-diagram script/sqlt-diff script/sqlt-diff-old script/sq
 
 =back
 
+=head2 Sat Feb 11 09:32:15 2012: C<Module> L<HTTP::Body|HTTP::Body>
+
+=over 4
+
+=item *
+
+C<installed into: C:\strawberry\perl\site\lib>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.15>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
