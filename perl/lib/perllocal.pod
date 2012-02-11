@@ -9920,3 +9920,25 @@ C<EXE_FILES: bin/scan_prereqs>
 
 =back
 
+=head2 Sat Feb 11 17:17:30 2012: C<Module> L<Perl::Version|Perl::Version>
+
+=over 4
+
+=item *
+
+C<installed into: C:\strawberry\perl\site\lib>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.011>
+
+=item *
+
+C<EXE_FILES: examples/perl-reversion>
+
+=back
+
