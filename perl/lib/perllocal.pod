@@ -11152,3 +11152,25 @@ C<EXE_FILES: script/re.pl>
 
 =back
 
+=head2 Tue Mar 13 12:34:31 2012: C<Module> L<Test::WWW::Selenium|Test::WWW::Selenium>
+
+=over 4
+
+=item *
+
+C<installed into: C:\strawberry\perl\site\lib>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.32>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
