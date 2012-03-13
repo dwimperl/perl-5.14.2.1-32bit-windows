@@ -2,13 +2,13 @@ use strict;
 use warnings;
 package YAML::Node;
 
-our $VERSION = '0.77';
+our $VERSION = '0.80';
 
 use YAML::Tag;
 require YAML::Mo;
 
 use Exporter;
-our @ISA     = 'Exporter';
+our @ISA     = qw(Exporter YAML::Mo::Object);
 our @EXPORT  = qw(ynode);
 
 sub ynode {
@@ -294,7 +294,7 @@ Ingy döt Net <ingy@cpan.org>
 
 =head1 COPYRIGHT
 
-Copyright (c) 2006. Ingy döt Net. All rights reserved.
+Copyright (c) 2006, 2011-2012. Ingy döt Net. All rights reserved.
 
 Copyright (c) 2002. Brian Ingerson. All rights reserved.
 

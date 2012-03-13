@@ -2,7 +2,7 @@ use 5.008001;
 package YAML;
 use YAML::Mo;
 
-our $VERSION = '0.77';
+our $VERSION = '0.80';
 
 use Exporter;
 push @YAML::ISA, 'Exporter';
@@ -662,7 +662,7 @@ optimum human readability.
 
 =item plain scalar
 
-A plain sclar is unquoted. All plain scalars are automatic candidates
+A plain scalar is unquoted. All plain scalars are automatic candidates
 for "implicit tagging". This means that their tag may be determined
 automatically by examination. The typical uses for this are plain alpha
 strings, integers, real numbers, dates, times and currency.
@@ -787,7 +787,7 @@ L<http://yaml.kwiki.org> is the official YAML wiki.
 
 =head1 SEE ALSO
 
-See YAML::Syck. Fast!
+See YAML::XS. Fast!
 
 =head1 AUTHOR
 
@@ -796,12 +796,12 @@ Ingy döt Net <ingy@cpan.org>
 is resonsible for YAML.pm.
 
 The YAML serialization language is the result of years of collaboration
-between Oren Ben-Kiki, Clark Evans and Ingy dE<ouml>t Net. Several others
+between Oren Ben-Kiki, Clark Evans and Ingy döt Net. Several others
 have added help along the way.
 
 =head1 COPYRIGHT
 
-Copyright (c) 2005, 2006, 2008. Ingy dE<ouml>t Net.
+Copyright (c) 2005, 2006, 2008, 2011-2012. Ingy döt Net.
 
 Copyright (c) 2001, 2002, 2005. Brian Ingerson.
 

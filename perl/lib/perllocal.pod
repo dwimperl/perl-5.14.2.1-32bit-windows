@@ -10866,3 +10866,25 @@ C<EXE_FILES: >
 
 =back
 
+=head2 Tue Mar 13 12:04:11 2012: C<Module> L<YAML|YAML>
+
+=over 4
+
+=item *
+
+C<installed into: C:\strawberry\perl\site\lib>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.80>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
