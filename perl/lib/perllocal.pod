@@ -11262,3 +11262,25 @@ C<EXE_FILES: >
 
 =back
 
+=head2 Tue Mar 13 13:50:36 2012: C<Module> L<XML::SAX::Writer|XML::SAX::Writer>
+
+=over 4
+
+=item *
+
+C<installed into: C:\strawberry\perl\site\lib>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.53>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
