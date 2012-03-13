@@ -1,10 +1,10 @@
 package Debug::Client;
 
-use 5.008005;
+use 5.008006;
 use strict;
 use warnings;
 
-our $VERSION = '0.16';
+our $VERSION = '0.18';
 
 use utf8;
 use IO::Socket;
@@ -16,9 +16,13 @@ use constant {
 
 =head1 NAME
 
-Debug::Client - client side code for perl debugger
+Debug::Client - debugger client side code for Padre the Perl IDE
 
-=head1 SYNOPIS
+=head1 VERSION
+
+This document describes Debug::Client version 0.18
+
+=head1 SYNOPSIS
 
   use Debug::Client;
   my $debugger = Debug::Client->new(host => $host, port => $port);
@@ -111,6 +115,10 @@ Other planned methods:
 
 =head1 DESCRIPTION
 
+The prime use of this module is to provide debugger functionality for Padre 0.94+, 
+
+This should be Perl 5.16.0 ready.
+
 =cut
 
 =head2 new
@@ -129,20 +137,32 @@ TODO: Is there any reason to separate the two?
 
 =cut
 
+#######
+# new
+#######
 sub new {
-	my ( $class, %args ) = @_;
-	my $self = bless {}, $class;
-
-	%args = (
-		host => 'localhost', port => 24642,
-		%args
-	);
-
-	$self->{host} = $args{host};
-	$self->{port} = $args{port};
-
+	my $class = shift; # What class are we constructing?
+	my $self  = {};    # Allocate new memory
+	bless $self, $class; # Mark it of the right type
+	$self->_init(@_);    # Call _init with remaining args
 	return $self;
 }
+#######
+# _init
+#######
+sub _init {
+	my ( $self, %args ) = @_;
+	$self->{local_host} = $args{host} ? $args{host} : 'localhost';
+	$self->{local_port} = $args{port} ? $args{port} : 24642;
+
+	#ToDo for IO::Socket::IP
+	# $self->{porto}      = $args{porto}  ? $args{porto}  : 'tcp';
+	# $self->{listen}     = $args{listen} ? $args{listen} : SOMAXCONN;
+	# $self->{reuse_addr} = $args{reuse}	? $args{reuse}  : 1;
+
+	return;
+}
+
 
 =head1 Warning sub listen has bean deprecated
 
@@ -174,22 +194,24 @@ See C<new>
 # Method listener
 #######
 sub listener {
-	my ($self) = @_;
+	my $self = shift;
 
 	# Open the socket the debugger will connect to.
 	my $sock = IO::Socket::INET->new(
-		LocalHost => $self->{host},
-		LocalPort => $self->{port},
+		LocalHost => $self->{local_host},
+		LocalPort => $self->{local_port},
 		Proto     => 'tcp',
 		Listen    => SOMAXCONN,
-
-		# Reuse     => 1,	#(deprecated, prefer ReuseAddr)
 		ReuseAddr => 1,
-	);
-	$sock or carp "Could not connect to '$self->{host}' '$self->{port}' no socket :$!";
-	_logger("listening on '$self->{host}:$self->{port}'");
-	$self->{sock} = $sock;
 
+		# Proto     => $self->{porto},
+		# Listen    => $self->{listen},
+		# ReuseAddr => $self->{reuse_addr},
+	);
+	$sock or carp "Could not connect to '$self->{local_host}' '$self->{local_port}' no socket :$!";
+	_logger("listening on '$self->{local_host}:$self->{local_port}'");
+
+	$self->{sock}     = $sock;
 	$self->{new_sock} = $self->{sock}->accept();
 
 	return;
@@ -227,7 +249,7 @@ sub quit {
 
 =head2 show_line
 
-.
+. (dot)
 
 Return the internal debugger pointer to the line last executed, and print out that line.
 
@@ -247,6 +269,43 @@ sub show_line {
 
 	$self->_prompt( \$buf );
 	return $buf;
+}
+
+
+=head2 get_lineinfo
+
+Return the internal debugger pointer to the line last executed, 
+and generate filename and row for where are we now. 
+trying to use perl5db lineinfo in naff way,
+
+ $debugger->get_lineinfo();
+
+Then use the following as and when.
+
+ $debugger->filename;
+ $debugger->row;
+ 
+to get filename and row for ide due to changes in perl5db v1.35 see perl5156delta
+
+=cut
+
+#######
+# Method sget_lineinf
+#######
+sub get_lineinfo {
+	my $self = shift;
+
+	$self->_send('.');
+	my $buf = $self->_get;
+
+	$self->{buffer} =~ m{^[\w:]* 	# module
+                  \( ([^\)]*):(\d+) \) 	# (file):(row)
+                                    }mx;
+
+	$self->{filename} = $1;
+	$self->{row}      = $2;
+
+	return;
 }
 
 =head2 show_view
@@ -331,24 +390,10 @@ or when some of the elements of the returned array are themselves references
 sub step_out {
 	my ($self) = @_;
 
-	carp('Must call step_out in list context') if not wantarray;
+	return ('Warning: Must call step_out in list context') if not wantarray;
 
 	$self->_send('r');
 	my $buf = $self->_get;
-
-	# void context return from main::f
-	# scalar context return from main::f: 242
-	# list  context return from main::f:
-	# 0 22
-	# 1 34
-	# main::(t/eg/02-sub.pl:9):	my $z = $x + $y;
-
-	# list context return from main::g:
-	# 0  'baz'
-	# 1  'foo
-	# bar'
-	# 2  'moo'
-	# main::(t/eg/03-return.pl:10):	$x++;
 
 	$self->_prompt( \$buf );
 	my @line = $self->_process_line( \$buf );
@@ -359,9 +404,6 @@ sub step_out {
 		$ret     = $3;
 	}
 
-	#if ($context and $context eq 'list') {
-	# TODO can we parse this inteligently in the general case?
-	#}
 	return ( @line, $ret );
 }
 
@@ -464,12 +506,7 @@ sub set_breakpoint {
 
 	$self->_send("f $file");
 
-	# $self->_send("b $file");
 	my $b = $self->_get;
-
-	# print $b . "\n";
-
-	# Already in t/eg/02-sub.pl.
 
 	$self->_send("b $line");
 
@@ -477,7 +514,6 @@ sub set_breakpoint {
 	# if it failed we saw two possible replies
 	my $buf = $self->_get;
 
-	# print $buf . "\n";
 	my $prompt = $self->_prompt( \$buf );
 	if ( $buf =~ /^Subroutine [\w:]+ not found\./ ) {
 
@@ -557,12 +593,6 @@ sub list_break_watch_action {
 		return $ret;
 	}
 
-	# short cut for direct output
-	# return $ret;
-
-	# t/eg/04-fib.pl:
-	#  17:      my $n = shift;
-	#    break if (1)
 	my $buf    = $self->buffer;
 	my $prompt = $self->_prompt( \$buf );
 
@@ -589,22 +619,6 @@ sub list_break_watch_action {
 	return ( $prompt, \@breakpoints );
 }
 
-=head2 execute_code
-
-  $debugger->execute_code($some_code_to_execute);
-
-=cut
-
-sub execute_code {
-	my ( $self, $code ) = @_;
-
-	return if not defined $code;
-
-	$self->_send($code);
-	my $buf = $self->_get;
-	$self->_prompt( \$buf );
-	return $buf;
-}
 
 =head2 get_value
 
@@ -616,8 +630,7 @@ value of that reference?
 
 =cut
 
-# TODO if the given $x is a reference then something (either this module
-# or its user) should actually call   x $var
+# TODO if the given $x is a reference then something (either this module or its user) should actually call   x $var
 sub get_value {
 	my ( $self, $var ) = @_;
 
@@ -730,7 +743,7 @@ sub get_v_vars {
 
 X [vars] Same as V currentpackage [vars]
 
- $debugger->get_v_vars(regex);
+ $debugger->get_x_vars(regex);
 
 =cut
 
@@ -803,7 +816,7 @@ sub set_option {
 	my ( $self, $option ) = @_;
 
 	unless ( defined $option ) {
-		return;
+		return 'missing option';
 	}
 
 	$self->_send("o $option");
@@ -915,8 +928,7 @@ sub module {
 #######
 # Internal Method _get
 #######
-# TODO shall we add a timeout and/or a number to count down the number
-# sysread calls that return 0 before deciding it is really done
+# TODO shall we add a time-out and/or a number to count down the number sysread calls that return 0 before deciding it is really done
 sub _get {
 	my ($self) = @_;
 
@@ -973,25 +985,28 @@ sub _parse_dumper {
 sub _process_line {
 	my ( $self, $buf ) = @_;
 
+	my $line    = BLANK;
+	my $module  = BLANK;
+	my $file    = BLANK;
+	my $row     = BLANK;
+	my $content = BLANK;
+
 	if ( not defined $buf or not ref $buf or ref $buf ne 'SCALAR' ) {
 		carp('_process_line should be called with a reference to a scalar');
 	}
 
 	if ( $$buf =~ /Debugged program terminated/ ) {
-		return '<TERMINATED>';
+		$module = '<TERMINATED>';
+		$self->{module} = $module;
+		return $module;
 	}
 
 	my @parts = split /\n/, $$buf;
-	
-	my $line = BLANK;
-	my $module  = BLANK;
-	my $file    = BLANK;
-	my $row     = BLANK;
-	my $content = BLANK;
+
+
 	$line = pop @parts;
 
-	#TODO $line is where all CPAN_Testers errors come from
-	# try to debug some test reports
+	#TODO $line is where all CPAN_Testers errors come from try to debug some test reports
 	# http://www.nntp.perl.org/group/perl.cpan.testers/2009/12/msg6542852.html
 	if ( not defined $line ) {
 		croak("Debug::Client: Line is undef. Buffer is $$buf");
@@ -1003,22 +1018,13 @@ sub _process_line {
 		if ( $line =~ /^\d+:   \s*  (.*)$/x ) {
 			$cont = $1;
 			$line = pop @parts;
-			# my $next_line = pop @parts;
-		# if ( defined $next_line ) {
-			# $line = pop @parts;
-		# }
 
-			# _logger("Line2: $line");
 		}
 	}
 
 	$$buf = join "\n", @parts;
-	# my ( $module, $file, $row, $content ) = q{ };
 
-	# the last line before
-	# main::(t/eg/01-add.pl:8):  my $z = $x + $y;
-
-	if ( $line =~ m{^([\w:]*) 			# module
+	if ($line =~ m{^([\w:]*) 			# module
                   \( ([^\)]*):(\d+) \) 	# (file:row)
                   :\t? 					# :
                   (.*) 					# content
@@ -1029,33 +1035,24 @@ sub _process_line {
 	}
 	if ( $module eq BLANK || $file eq BLANK || $row eq BLANK ) {
 
-# 		# unless ( defined $module || defined $file || defined $row ) {
+		# 		# unless ( defined $module || defined $file || defined $row ) {
 		my $current_file = $self->show_line();
-		# p $current_file;
 
-		$current_file =~ m/^([\w:]*) \( (.*) : (\d+) .* /mx;
+		$current_file =~ m/([\w:]*) \( (.*) : (\d+) .* /mgx;
 
-		$module  = $1;
-		$file    = $2;
-		$row     = $3;
-		# p $module;
-		# p $file;
-		# p $row;
+		$module = $1;
+		$file   = $2;
+		$row    = $3;
+
 	}
-	
+
 	if ($cont) {
 		$content = $cont;
 	}
 
-	# if ($file) {
-
-# # 		$self->{filename} = $file;
-
-# # 		# print "filename: $self->{filename}\n";
-	# }	
 	$self->{module}   = $module;
 	$self->{filename} = $file;
-	$self->{row} = $row;
+	$self->{row}      = $row;
 	return ( $module, $file, $row, $content );
 }
 
@@ -1072,8 +1069,6 @@ sub _process_line {
 # See 00-internal.t for test cases
 sub _prompt {
 	my ( $self, $buf ) = @_;
-
-	# _logger("-prompt buf: $$buf");
 
 	if ( not defined $buf or not ref $buf or ref $buf ne 'SCALAR' ) {
 		croak('_prompt should be called with a reference to a scalar');
@@ -1095,7 +1090,6 @@ sub _prompt {
 sub _send {
 	my ( $self, $input ) = @_;
 
-	#print "Sending '$input'\n";
 	print { $self->{new_sock} } "$input\n";
 
 	return 1;
@@ -1133,11 +1127,7 @@ sub __send_np {
 	my ( $self, $input ) = @_;
 	$self->_send($input);
 
-	# print "input: $input\n";
-
 	my $buf = $self->_get;
-
-	# print "buffer: $buf\n";
 
 	return $buf;
 }
@@ -1148,8 +1138,14 @@ __END__
 
 =head1 BUGS AND LIMITATIONS
 
+Warning if you use List request you may get spurious results.
+
+When using against perl5db.pl v1.35 list mode gives an undef response, also leading single quote now correct. 
+Tests are skipped for list mode against v1.35 now.
+
 Debug::Client 0.12 tests are failing, due to changes in perl debugger, 
 when using perl5db.pl v1.34
+
 Debug::Client 0.13_01 skips added to failing tests.
 
  c [line|sub]
@@ -1176,21 +1172,23 @@ and just performing c on it's own
 
 =head3 _send_get
 
-=head3 _set_option
-
 =head1 AUTHORS
-
-Gabor Szabo E<lt>gabor@szabgab.comE<gt>
-
-Breno G. de Oliveira E<lt>garu at cpan.orgE<gt>
 
 Kevin Dawson E<lt>bowtie@cpan.orgE<gt>
 
+Gabor Szabo E<lt>gabor@szabgab.comE<gt>
+
+=head1 CONTRIBUTORS
+
+Breno G. de Oliveira E<lt>garu at cpan.orgE<gt>
+
 Ahmad M. Zawawi E<lt>ahmad.zawawi@gmail.comE<gt>
+
+Mark Gardner E<lt>mjgardner@cpan.orgE<gt>
 
 =head1 COPYRIGHT
 
-Copyright 2008-2011 Gabor Szabo. L<http://szabgab.com/>
+Copyright 2008-2012 Gabor Szabo/Kevin Dawson
 
 =head1 LICENSE
 
@@ -1205,11 +1203,16 @@ that's your problem.
 
 =head1 CREDITS and THANKS
 
-Originally started out from the remoteport.pl script from 
+Originally started out from the remote-port.pl script from 
 Pro Perl Debugging written by Richard Foley.
 
 =head1 See Also
 
 L<GRID::Machine::remotedebugtut>
 
+L<Devel::ebug>
+
+L<Devel::Trepan>
+
 =cut
+

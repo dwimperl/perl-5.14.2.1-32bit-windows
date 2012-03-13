@@ -10822,3 +10822,25 @@ C<EXE_FILES: >
 
 =back
 
+=head2 Tue Mar 13 11:46:08 2012: C<Module> L<Debug::Client|Debug::Client>
+
+=over 4
+
+=item *
+
+C<installed into: C:\strawberry\perl\site\lib>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.18>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
