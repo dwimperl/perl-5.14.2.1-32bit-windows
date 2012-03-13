@@ -11944,3 +11944,25 @@ C<EXE_FILES: >
 
 =back
 
+=head2 Tue Mar 13 15:16:17 2012: C<Module> L<Catalyst::Plugin::Static::Simple|Catalyst::Plugin::Static::Simple>
+
+=over 4
+
+=item *
+
+C<installed into: C:\strawberry\perl\site\lib>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.29>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
