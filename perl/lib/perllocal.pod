@@ -10492,3 +10492,25 @@ C<EXE_FILES: bin/dzil>
 
 =back
 
+=head2 Tue Mar 13 10:48:26 2012: C<Module> L<DBIx::Class::IntrospectableM2M|DBIx::Class::IntrospectableM2M>
+
+=over 4
+
+=item *
+
+C<installed into: C:\strawberry\perl\site\lib>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.001001>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
