@@ -11570,3 +11570,25 @@ C<EXE_FILES: >
 
 =back
 
+=head2 Tue Mar 13 14:33:46 2012: C<Module> L<Tree::Simple::VisitorFactory|Tree::Simple::VisitorFactory>
+
+=over 4
+
+=item *
+
+C<installed into: C:\strawberry\perl\site\lib>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.10>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
