@@ -11416,3 +11416,25 @@ C<EXE_FILES: >
 
 =back
 
+=head2 Tue Mar 13 14:24:00 2012: C<Module> L<MooseX::MethodAttributes|MooseX::MethodAttributes>
+
+=over 4
+
+=item *
+
+C<installed into: C:\strawberry\perl\site\lib>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.27>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
