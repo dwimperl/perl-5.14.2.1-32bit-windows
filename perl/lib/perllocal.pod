@@ -11702,3 +11702,25 @@ C<EXE_FILES: >
 
 =back
 
+=head2 Tue Mar 13 14:55:11 2012: C<Module> L<FreezeThaw|FreezeThaw>
+
+=over 4
+
+=item *
+
+C<installed into: C:\strawberry\perl\site\lib>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.5001>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
