@@ -10910,3 +10910,25 @@ C<EXE_FILES: >
 
 =back
 
+=head2 Tue Mar 13 12:11:19 2012: C<Module> L<B::Utils|B::Utils>
+
+=over 4
+
+=item *
+
+C<installed into: C:\strawberry\perl\site\lib>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.19>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
