@@ -11064,3 +11064,25 @@ C<EXE_FILES: >
 
 =back
 
+=head2 Tue Mar 13 12:27:16 2012: C<Module> L<Clipboard|Clipboard>
+
+=over 4
+
+=item *
+
+C<installed into: C:\strawberry\perl\site\lib>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.13>
+
+=item *
+
+C<EXE_FILES: scripts/clipjoin scripts/clipedit scripts/clipbrowse scripts/clipaccumulate scripts/clipfilter>
+
+=back
+
