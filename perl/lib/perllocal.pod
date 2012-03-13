@@ -11636,3 +11636,25 @@ C<EXE_FILES: >
 
 =back
 
+=head2 Tue Mar 13 14:52:20 2012: C<Module> L<Debug::ShowStuff|Debug::ShowStuff>
+
+=over 4
+
+=item *
+
+C<installed into: C:\strawberry\perl\site\lib>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.13>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
