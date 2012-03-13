@@ -11,13 +11,13 @@ Variable::Magic - Associate user-defined magic to variables from Perl.
 
 =head1 VERSION
 
-Version 0.47
+Version 0.48
 
 =cut
 
 our $VERSION;
 BEGIN {
- $VERSION = '0.47';
+ $VERSION = '0.48';
 }
 
 =head1 SYNOPSIS
@@ -285,7 +285,25 @@ However, only the return value of the C<len> callback currently holds a meaning.
 
 =back
 
-Each callback can be specified as a code or a string reference, in which case the function denoted by the string will be used as the callback.
+Each callback can be specified as :
+
+=over 4
+
+=item *
+
+a code reference, which will be called as a subroutine.
+
+=item *
+
+a string reference, where the string denotes which subroutine is to be called when magic is triggered.
+If the subroutine name is not fully qualified, then the current package at the time the magic is invoked will be used instead.
+
+=item *
+
+a reference to C<undef>, in which case a no-op magic callback is installed instead of the default one.
+This may especially be helpful for 'local' magic, where an empty callback prevents magic from being copied during localization.
+
+=back
 
 Note that C<free> callbacks are I<never> called during global destruction, as there's no way to ensure that the wizard and the C<free> callback weren't destroyed before the variable.
 
@@ -657,7 +675,7 @@ Tests code coverage report is available at L<http://www.profvince.com/perl/cover
 
 =head1 COPYRIGHT & LICENSE
 
-Copyright 2007,2008,2009,2010,2011 Vincent Pit, all rights reserved.
+Copyright 2007,2008,2009,2010,2011,2012 Vincent Pit, all rights reserved.
 
 This program is free software; you can redistribute it and/or modify it
 under the same terms as Perl itself.
