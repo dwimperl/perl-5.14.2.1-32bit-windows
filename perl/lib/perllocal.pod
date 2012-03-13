@@ -11130,3 +11130,25 @@ C<EXE_FILES: bin/nopaste>
 
 =back
 
+=head2 Tue Mar 13 12:32:26 2012: C<Module> L<Devel::REPL|Devel::REPL>
+
+=over 4
+
+=item *
+
+C<installed into: C:\strawberry\perl\site\lib>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.003012>
+
+=item *
+
+C<EXE_FILES: script/re.pl>
+
+=back
+
