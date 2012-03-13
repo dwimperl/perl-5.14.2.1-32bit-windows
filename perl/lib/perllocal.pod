@@ -12010,3 +12010,25 @@ C<EXE_FILES: >
 
 =back
 
+=head2 Tue Mar 13 15:58:24 2012: C<Module> L<Catalyst::Controller::ActionRole|Catalyst::Controller::ActionRole>
+
+=over 4
+
+=item *
+
+C<installed into: C:\strawberry\perl\site\lib>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.15>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
