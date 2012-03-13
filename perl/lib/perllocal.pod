@@ -11196,3 +11196,25 @@ C<EXE_FILES: ack>
 
 =back
 
+=head2 Tue Mar 13 13:44:32 2012: C<Module> L<DBIx::Class::Schema::Loader|DBIx::Class::Schema::Loader>
+
+=over 4
+
+=item *
+
+C<installed into: C:\strawberry\perl\site\lib>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.07010>
+
+=item *
+
+C<EXE_FILES: script/dbicdump>
+
+=back
+
