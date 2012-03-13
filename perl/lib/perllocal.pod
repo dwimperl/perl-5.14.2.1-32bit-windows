@@ -11680,3 +11680,25 @@ C<EXE_FILES: >
 
 =back
 
+=head2 Tue Mar 13 14:54:08 2012: C<Module> L<PHP::Serialization|PHP::Serialization>
+
+=over 4
+
+=item *
+
+C<installed into: C:\strawberry\perl\site\lib>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.34>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
