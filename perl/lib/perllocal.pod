@@ -11460,3 +11460,25 @@ C<EXE_FILES: >
 
 =back
 
+=head2 Tue Mar 13 14:27:26 2012: C<Module> L<MooseX::Types::Common|MooseX::Types::Common>
+
+=over 4
+
+=item *
+
+C<installed into: C:\strawberry\perl\site\lib>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.001007>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
