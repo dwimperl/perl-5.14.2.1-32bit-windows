@@ -11218,3 +11218,25 @@ C<EXE_FILES: script/dbicdump>
 
 =back
 
+=head2 Tue Mar 13 13:48:15 2012: C<Module> L<XML::Generator::PerlData|XML::Generator::PerlData>
+
+=over 4
+
+=item *
+
+C<installed into: C:\strawberry\perl\site\lib>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.91>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
