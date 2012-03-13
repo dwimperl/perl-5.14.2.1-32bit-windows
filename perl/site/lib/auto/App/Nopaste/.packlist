@@ -1,0 +1,14 @@
+C:\strawberry\perl\site\bin\nopaste
+C:\strawberry\perl\site\bin\nopaste.bat
+C:\strawberry\perl\site\lib\App\Nopaste.pm
+C:\strawberry\perl\site\lib\App\Nopaste\Command.pm
+C:\strawberry\perl\site\lib\App\Nopaste\Service.pm
+C:\strawberry\perl\site\lib\App\Nopaste\Service\Codepeek.pm
+C:\strawberry\perl\site\lib\App\Nopaste\Service\Debian.pm
+C:\strawberry\perl\site\lib\App\Nopaste\Service\Gist.pm
+C:\strawberry\perl\site\lib\App\Nopaste\Service\PastebinCom.pm
+C:\strawberry\perl\site\lib\App\Nopaste\Service\Pastie.pm
+C:\strawberry\perl\site\lib\App\Nopaste\Service\Shadowcat.pm
+C:\strawberry\perl\site\lib\App\Nopaste\Service\Snitch.pm
+C:\strawberry\perl\site\lib\App\Nopaste\Service\Ubuntu.pm
+C:\strawberry\perl\site\lib\App\Nopaste\Service\ssh.pm

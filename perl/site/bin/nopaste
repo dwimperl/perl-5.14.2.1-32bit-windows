@@ -1,0 +1,22 @@
+#!/usr/bin/env perl
+use strict;
+use warnings;
+use App::Nopaste::Command;
+
+if (my $url = App::Nopaste::Command->new_with_options->run) {
+    print $url;
+    print "\n";
+}
+
+__END__
+
+=head1 NAME
+
+nopaste - command-line utility to nopaste
+
+=head1 DESCRIPTION
+
+See the documentation of L<App::Nopaste::Command>.
+
+=cut
+
