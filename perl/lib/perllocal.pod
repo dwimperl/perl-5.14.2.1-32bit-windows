@@ -12142,3 +12142,25 @@ C<EXE_FILES: >
 
 =back
 
+=head2 Tue Mar 13 16:10:02 2012: C<Module> L<Catalyst::Authentication::Credential::HTTP|Catalyst::Authentication::Credential::HTTP>
+
+=over 4
+
+=item *
+
+C<installed into: C:\strawberry\perl\site\lib>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.014>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
