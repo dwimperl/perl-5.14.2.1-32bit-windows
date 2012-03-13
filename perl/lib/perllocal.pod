@@ -11086,3 +11086,25 @@ C<EXE_FILES: scripts/clipjoin scripts/clipedit scripts/clipbrowse scripts/clipac
 
 =back
 
+=head2 Tue Mar 13 12:30:00 2012: C<Module> L<Browser::Open|Browser::Open>
+
+=over 4
+
+=item *
+
+C<installed into: C:\strawberry\perl\site\lib>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.04>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
