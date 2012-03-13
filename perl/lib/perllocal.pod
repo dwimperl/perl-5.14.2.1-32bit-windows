@@ -11592,3 +11592,25 @@ C<EXE_FILES: >
 
 =back
 
+=head2 Tue Mar 13 14:42:37 2012: C<Module> L<Catalyst::Runtime|Catalyst::Runtime>
+
+=over 4
+
+=item *
+
+C<installed into: C:\strawberry\perl\site\lib>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 5.90011>
+
+=item *
+
+C<EXE_FILES: script/catalyst.pl>
+
+=back
+
