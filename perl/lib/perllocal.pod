@@ -11834,3 +11834,25 @@ C<EXE_FILES: >
 
 =back
 
+=head2 Tue Mar 13 15:04:04 2012: C<Module> L<XML::Dumper|XML::Dumper>
+
+=over 4
+
+=item *
+
+C<installed into: C:\strawberry\perl\site\lib>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.81>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
