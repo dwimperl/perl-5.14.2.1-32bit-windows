@@ -1,0 +1,6 @@
+# Index created by AutoSplit for blib\lib\Memoize\ExpireLRU.pm
+#    (file acts as timestamp)
+package Memoize::ExpireLRU;
+sub DumpCache  ( $ );
+sub ShowStats  ();
+1;
